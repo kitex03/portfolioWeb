@@ -1,0 +1,50 @@
+---
+// filepath: src/components/Projects.astro
+import ProjectCard from './ProjectCard.astro';
+
+const projects = [
+  {
+    image: '/Usuario-Pruebas.jpg',
+    title: 'Visor de campo de golf con realidad aumentada',
+    description: 'Una ayuda a los golfista que permite visualizar el campo en el que juegas desde diferentes perspectivas. Mostrando las distancias a los obstaculos.',
+    pageUrl: 'https://example.com/proyecto1',
+    videoUrl: 'https://youtube.com/...',
+  },
+  {
+    image: '/imagenfinal.jpg',
+    title: 'Ikeacraze',
+    description: 'Videojuego donde el jugador debe crear muebles y entregarlos en un tiempo limite. Desarrollado en Unity y C#. Desarrollado junto a 4 compañeros para la asignatura de Desarrollo de Videojuegos.',
+    pageUrl: 'https://example.com/proyecto2',
+    videoUrl: 'https://vimeo.com/1117384670',
+  },
+  {
+    image: '/Malla.png',
+    title: 'Tela hecha con position based dynamics',
+    description: 'Una simulación de tela que utiliza dinámicas basadas en la posición para crear efectos realistas. Desarrollada con processing y C++.',
+    pageUrl: 'https://example.com/proyecto3',
+    videoUrl: 'https://vimeo.com/1047753032?share=copy',
+  },
+  {
+    image: '/Aprendizaje.png',
+    title: 'Aprendizaje por refuerzo',
+    description: 'Un proyecto para entrenar un agente inteligente utilizando técnicas de aprendizaje por refuerzo. Implementado en Python.',
+    pageUrl: 'https://example.com/proyecto4',
+    videoUrl: 'https://vimeo.com/1047752922?share=copy',
+  },
+  {
+    image: '/proyecto5.png',
+    title: 'Simulador de finanzas personales',
+    description: 'Una herramienta web que permite a los usuarios simular y planificar sus finanzas personales. Desarrollada con Vue.js y Node.js para el backend.',
+    pageUrl: 'https://example.com/proyecto5',
+    videoUrl: 'https://youtube.com/...',
+  },
+];
+---
+<section id="projects" class="py-16 px-6 flex flex-col items-center">
+  <h2 class="text-3xl font-bold text-white mb-8">🚀 Proyectos</h2>
+  <div class="flex flex-wrap gap-8 justify-center">
+    {projects.map(project => (
+      <ProjectCard {...project} />
+    ))}
+  </div>
+</section>

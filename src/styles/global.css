@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+    scroll-behavior: smooth;
+}
+
+.habilidades-lista img {
+  width: 4rem;      /* igual a w-8 */
+  height: 4rem;     /* igual a h-8 */
+  background: #ffffff; /* igual a bg-neutral-900 */
+  padding: 0.25rem; /* igual a p-1 */
+  border-radius: 0.5rem; /* igual a rounded */
+}

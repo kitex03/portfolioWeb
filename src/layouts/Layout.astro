@@ -1,0 +1,32 @@
+---
+import '../styles/global.css';
+import Header from '../components/header.astro';
+const {title} = Astro.props;
+---
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+  		<link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.0/dist/tailwind.min.css" rel="stylesheet">
+		<title>{title}</title>
+	</head>
+	<body>
+		<div class="fixed top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+		</div>
+		<Header />
+		<main id="content" class="pt-20 justify-center max-w-6xl mx-auto px-4 flex flex-col items-center">
+			<slot />
+			<script src="/src/scripts/activeSection.js"></script>
+		</main>
+	</body>
+<style>
+	html,
+	body {
+			margin: 0;
+			width: 100%;
+			height: 100%;
+		}
+</style>
