@@ -1,17 +1,18 @@
 ---
-const profileImage = "/FotoOrla.jpg"; // Cambia la ruta a tu foto
+const profileImage = "/portfolioWeb/FotoOrla.jpg"; // Cambia la ruta a tu foto
 const name = "Soy Enrique Morcillo Martínez";
 const description = `
-Soy desarrollador web apasionado por crear experiencias digitales únicas. 
-Me especializo en tecnologías modernas como Astro, React y Node.js. 
-Disfruto resolviendo problemas complejos y aprendiendo nuevas herramientas. 
-Mi objetivo es aportar valor a cada proyecto en el que participo. 
-Siempre busco mejorar y crecer profesionalmente.
+Graduado de Ingeniería Multimedia, apasionado por las
+nuevas tecnologías y el desarrollo de soluciones innovadoras.
+Busco ampliar mis conocimientos y experiencia laboral en el
+campo de las TIC. Mi objetivo es profesionalizarme en el
+campo del 3D y la realidad virtual y aumentada, sobre todo en la 
+animación y desarrollo de videojuegos.
 `;
 ---
 
-<div class="flex items-center justify-center h-screen gap-8 py-8 ">
-    <img src={profileImage} alt="Foto de perfil" class="w-40 h-40 object-cover rounded-full shadow-md" />
+<div class="flex items-center justify-center gap-8 py-12 mt-8">
+    <img src={profileImage} alt="Foto de perfil" class="w-60 h-60 object-cover rounded-full shadow-md" />
     <div class="max-w-lg">
         <div class="text-3xl font-bold text-white mb-4">{name}</div>
         <div class="text-lg leading-relaxed text-white">{description}</div>
