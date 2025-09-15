@@ -1,7 +1,6 @@
 export function setupCopyEmail(emailId, buttonId) {
   const btn = document.getElementById(buttonId);
   const emailSpan = document.getElementById(emailId);
-  
 
   if (!btn || !emailSpan) return;
 
