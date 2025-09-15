@@ -7,5 +7,6 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [tailwind()],
+  site: 'https://kitex03.github.io',
   base: '/portfolioWeb/' // Cambia esto si tu repo tiene otro nombre
 });
